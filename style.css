@@ -1,115 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9fafb;
-    color: #1f2933;
-    text-align: center;
-    padding: 40px;
+  line-height: 1.6;
+  color: #1f2933;
+  background: #ffffff;
 }
 
-h1 {
-    color: #111827;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-h2 {
-    color: #2563eb;
-    margin-top: 40px;
-}
-
-p {
-    font-size: 18px;
-    font-weight: 300;
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #f8fafc;
+  text-align: center;
 }
 
 
-ul {
-    list-style: none;
-    padding: 0;
+.hero h1 {
+  font-size: 2.5rem;
 }
 
-li {
-    background-color: #ffffff;
-    margin: 8px auto;
-    padding: 10px;
-    width: 220px;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-div {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
+.hero h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #cbd5f5;
 }
 
-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #6366f1;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4f46e5;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
 }
 
 
-h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
+/* SECTIONS */
+.section p {
+  margin-bottom: 15px;
+  max-width: 700px;
 }
-a {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 12px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-a:hover {
-    background-color: #2980b9;
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
+
+/* CARD */
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 button {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-button:hover {
-    background-color: #1e40af;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-input {
-    padding: 8px;
-    width: 200px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
 }
-.concluida {
-    text-decoration: line-through;
-    color: #9ca3af;
-}
-li {
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    flex-direction: column;
+    gap: 10px;
+  }
 
-li button {
-    background-color: #ef4444;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    font-weight: bold;
-}
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 
-li button:hover {
-    background-color: #dc2626;
+  .section h3 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
 }
