@@ -35,6 +35,7 @@ body {
 
 .hero p {
   max-width: 650px;
+  margin: 0 auto; /* isso centraliza o bloco */
   font-size: 1.1rem;
   color: #e2e8f0;
 }
@@ -219,5 +220,6 @@ footer {
     font-size: 1.8rem;
   }
 }
+
 
 
