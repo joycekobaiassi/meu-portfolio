@@ -14,7 +14,7 @@ body {
 /* HERO */
 
 .hero {
-  padding: 80px 20px 60px;
+  padding: 90px 20px 70px;
   background: linear-gradient(135deg, #0f172a, #020617);
   color: #ffffff;
   text-align: center;
@@ -22,12 +22,11 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .hero h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #a5b4fc;
   margin-bottom: 20px;
@@ -35,7 +34,7 @@ body {
 
 .hero p {
   max-width: 650px;
-  margin: 0 auto; /* isso centraliza o bloco */
+  margin: 0 auto;
   font-size: 1.1rem;
   color: #e2e8f0;
 }
@@ -44,11 +43,9 @@ body {
   margin-top: 35px;
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
-/* BUTTONS */
 
 .btn {
   padding: 14px 28px;
@@ -57,12 +54,12 @@ body {
   text-decoration: none;
   border-radius: 10px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
   background: #4f46e5;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .btn-outline {
@@ -76,7 +73,7 @@ body {
   color: #ffffff;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section {
   padding: 100px 20px;
@@ -85,51 +82,47 @@ body {
 }
 
 .section h3 {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
   text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
 }
 
 .section p {
+  text-align: center;
   max-width: 750px;
   margin: 0 auto 20px auto;
-  text-align: center;
-  font-size: 1.05rem;
-  color: #334155;
+  color: #475569;
 }
 
 /* PROJECT GRID */
 
-#projects {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 35px;
 }
-
-/* CARD */
 
 .card {
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
 }
 
 .card h4 {
-  font-size: 1.3rem;
   margin-bottom: 12px;
+  font-size: 1.2rem;
 }
 
 .card p {
   text-align: left;
   margin-bottom: 15px;
-  color: #475569;
 }
 
 .card span {
@@ -144,14 +137,13 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: #0f172a;
-  transition: color 0.3s ease;
 }
 
 .card a:hover {
   color: #6366f1;
 }
 
-/* CONTACT FORM */
+/* CONTACT */
 
 form {
   max-width: 600px;
@@ -166,13 +158,11 @@ input, textarea {
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   font-size: 1rem;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus, textarea:focus {
   outline: none;
-  border: 1px solid #6366f1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  border-color: #6366f1;
 }
 
 button {
@@ -181,10 +171,8 @@ button {
   color: #ffffff;
   border: none;
   border-radius: 10px;
-  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 button:hover {
@@ -203,44 +191,6 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero h2 {
-    font-size: 1.2rem;
-  }
-
-  .section {
-    padding: 70px 20px;
-  }
-
-  .section h3 {
-    font-size: 1.8rem;
-  }
-}
-/* ===== PROJECT GRID ===== */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1100px;
-  margin: 40px auto 0 auto;
-}
-
-.card {
-  background: #1a1a1a;
-  padding: 25px;
-  border-radius: 10px;
-  text-align: left;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -252,7 +202,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
