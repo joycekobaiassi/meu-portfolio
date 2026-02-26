@@ -108,6 +108,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.05);
   transition: 0.3s ease;
+  color: #0f172a;
 }
 
 .card:hover {
@@ -202,3 +203,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
